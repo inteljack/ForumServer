@@ -8,7 +8,7 @@ class TopicCreateForm(forms.Form):
 
 class PostCreateForm(forms.Form):
     message = forms.CharField(label="Message", min_length=3, widget=forms.Textarea())
-    image = forms.FileField(label="image")
+    image = forms.FileField(label="image", required=False)
 # class UploadFileForm(forms.Form):
 #     title = forms.CharField(max_length=50)
 #     file = forms.FileField()
